@@ -1,0 +1,28 @@
+{
+  "name": "@dialectik/default-plugin",
+  "version": "0.0.1",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Default Dialectik plugin (no framework)",
+  "types": "lib/index.d.mts",
+  "module": "lib/index.mjs",
+  "main": "lib/index.mjs",
+  "scripts": {
+    "build": "rm -rf ./lib/* && tsc && cp -r ./src/react ./lib"
+  },
+  "keywords": [
+    "Dialectik",
+    "plugin"
+  ],
+  "author": "benoit.rognier@edukera.com",
+  "license": "MIT",
+  "dependencies": {
+    "@dialectik/plugin-interface": "^1.0.13"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
